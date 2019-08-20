@@ -8,18 +8,47 @@
 
 import UIKit
 
-class ReadingListTableViewController: UITableViewController {
+class ReadingListTableViewController: UITableViewController, BookTableVewCellDelegate {
+    
+    
+    
     
     let bookController = BookController()
 
     // MARK: - Table view data source
-
+    
+    func toggleHasBeenRead(for cell: BookTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let book = allBooks(indexPath: indexPath)
+        bookController.hasBeenRead(book: book)
+        tableView.reloadData()
+    }
+    
+    func allBooks(indexPath: IndexPath) -> Book {
+        if indexPath.section == 0 {
+            return bookController.readBooks[indexPath.row]
+        } else {
+            return bookController.unreadBooks[indexPath.row]
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let read = bookController.readBooks.isEmpty ? nil : "Read"
+        let unread = bookController.unreadBooks.isEmpty ? nil : "Unread"
+        
+        return section == 0 ? read : unread
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        if section == 0 {
+            return bookController.readBooks.count
+        } else {
+            return bookController.unreadBooks.count
+        }
     }
 
 
