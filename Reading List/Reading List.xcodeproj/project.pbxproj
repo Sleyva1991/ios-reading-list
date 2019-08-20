@@ -16,6 +16,7 @@
 		E86ACD93230CAB5400017A03 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86ACD92230CAB5400017A03 /* BookDetailViewController.swift */; };
 		E86ACD95230CAB7500017A03 /* ReadingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86ACD94230CAB7500017A03 /* ReadingListTableViewController.swift */; };
 		E86ACD98230CABB800017A03 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86ACD97230CABB800017A03 /* BookTableViewCell.swift */; };
+		E86ACD9B230CB22500017A03 /* BookTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86ACD9A230CB22500017A03 /* BookTableViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E86ACD92230CAB5400017A03 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		E86ACD94230CAB7500017A03 /* ReadingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListTableViewController.swift; sourceTree = "<group>"; };
 		E86ACD97230CABB800017A03 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		E86ACD9A230CB22500017A03 /* BookTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				E86ACD97230CABB800017A03 /* BookTableViewCell.swift */,
+				E86ACD9A230CB22500017A03 /* BookTableViewCellDelegate.swift */,
 			);
 			path = "Table Cell";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				466941692110E22A00E7FF73 /* AppDelegate.swift in Sources */,
 				E86ACD93230CAB5400017A03 /* BookDetailViewController.swift in Sources */,
 				E86ACD98230CABB800017A03 /* BookTableViewCell.swift in Sources */,
+				E86ACD9B230CB22500017A03 /* BookTableViewCellDelegate.swift in Sources */,
 				E86ACD8C230C97C700017A03 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
