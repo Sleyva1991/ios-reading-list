@@ -12,6 +12,10 @@ class BookController {
     
     var books: [Book] = []
     
+    init() {
+        loadFromPersistantStore()
+    }
+    
     var readingListURL: URL? {
         let fileManger = FileManager.default
         guard let documentsDirectory = fileManger.urls(for: .documentDirectory, in: .userDomainMask).first  else { return nil }

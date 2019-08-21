@@ -97,7 +97,7 @@
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-bR-J6P">
                                         <rect key="frame" x="0.0" y="38" width="398" height="243"/>
-                                        <color key="backgroundColor" red="1" green="0.97012015870000001" blue="0.93609238949999996" alpha="0.62973565919999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -152,6 +152,6 @@
         <image name="unchecked" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lXg-2b-BRS"/>
+        <segue reference="qLR-bE-S0K"/>
     </inferredMetricsTieBreakers>
 </document>
